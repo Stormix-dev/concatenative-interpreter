@@ -1,0 +1,97 @@
+# ============================================================================
+# ESEMPI ESTESI PER INTERPRETE CONCATENATIVO
+# EXTENDED EXAMPLES FOR CONCATENATIVE INTERPRETER
+# ============================================================================
+
+# Basic arithmetic | Aritmetica base
+# ===================
+10 5 + print
+# Output: 15
+
+20 7 - print
+# Output: 13
+
+6 7 * print
+# Output: 42
+
+# Extended arithmetic | Aritmetica estesa
+# =======================
+17 5 mod print
+# Output: 2 (resto di 17 / 5)
+
+-42 abs print
+# Output: 42
+
+10 neg print
+# Output: -10
+
+# Comparison operations | Operazioni di confronto
+# =========================
+5 10 lt print
+# Output: 1 (5 < 10 è vero)
+
+10 5 gt print
+# Output: 1 (10 > 5 è vero)
+
+7 7 eq print
+# Output: 1 (7 == 7 è vero)
+
+# Stack manipulations | Manipolazioni stack
+# =======================
+1 2 3 .s
+# Output: Stack[3]: [ 1 2 3 ]
+
+clear
+5 dup .s
+# Output: Stack[2]: [ 5 5 ]
+
+clear
+1 2 nip .s
+# Output: Stack[1]: [ 2 ]
+
+clear
+5 10 tuck .s
+# Output: Stack[3]: [ 10 5 10 ]
+
+clear
+3 4 2dup .s
+# Output: Stack[4]: [ 3 4 3 4 ]
+
+# Utility functions | Funzioni utility
+# =====================
+clear
+15 25 min print
+# Output: 15
+
+15 25 max print
+# Output: 25
+
+# Calculate average of two numbers | Calcola media di due numeri
+10 20 + 2 / print
+# Output: 15
+
+# Find if a number is even | Trova se un numero è pari
+17 2 mod 0 eq print
+# Output: 0 (17 is odd | 17 è dispari)
+
+# Complex expression | Espressione complessa
+# =====================
+# Calculate: ((10 + 5) * 3 - 20) / 5
+10 5 + 3 * 20 - 5 / print
+# Output: 5
+
+# Stack depth example | Esempio profondità stack
+# =======================
+clear
+1 2 3 4 5 depth print
+# Output: 5
+
+# Absolute difference | Differenza assoluta
+# ====================
+clear
+15 22 - abs print
+# Output: 7
+
+# Show statistics | Mostra statistiche
+# =================
+stats
