@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -O2
-TARGET = concat_ext
+TARGET = concat_exec
 SRC = concat_interpreter.c
 
 all: $(TARGET)
